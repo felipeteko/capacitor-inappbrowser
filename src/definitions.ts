@@ -206,6 +206,13 @@ export interface OpenWebViewOptions {
    */
   showArrow?: boolean;
   /**
+   * enableZoom: if true enable zoom for the window, Android only
+   *
+   * @since 1.2.5
+   * @default false
+   */
+  enableZoom?: boolean;
+  /**
    * ignoreUntrustedSSLError: if true, the webview will ignore untrusted SSL errors allowing the user to view the website.
    *
    * @since 6.1.0
