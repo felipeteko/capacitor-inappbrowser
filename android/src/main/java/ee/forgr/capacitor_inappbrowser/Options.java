@@ -24,6 +24,7 @@ public class Options {
   private boolean VisibleTitle;
   private String ToolbarColor;
   private boolean ShowArrow;
+  private boolean EnableZoom;
   private boolean ignoreUntrustedSSLError;
 
   public PluginCall getPluginCall() {
@@ -190,6 +191,14 @@ public class Options {
 
   public void setArrow(boolean _showArrow) {
     this.ShowArrow = _showArrow;
+  }
+
+  public boolean enableZoom() {
+    return EnableZoom;
+  }
+
+  public void setEnableZoom(boolean _enableZoom) {
+    this.EnableZoom = _enableZoom;
   }
 
   public boolean ignoreUntrustedSSLError() {
