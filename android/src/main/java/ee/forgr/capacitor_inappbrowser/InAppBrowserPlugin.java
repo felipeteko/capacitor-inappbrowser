@@ -276,7 +276,7 @@ public class InAppBrowserPlugin
     }
     currentUrl = url;
     final Options options = new Options();
-    options.setEnableZoom(call.getBoolean("enableZoom", false))
+    options.setEnableZoom(call.getBoolean("enableZoom", false));
     options.setUrl(url);
     options.setHeaders(call.getObject("headers"));
     options.setShowReloadButton(call.getBoolean("showReloadButton", false));

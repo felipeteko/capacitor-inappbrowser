@@ -1,4 +1,4 @@
-# @capgo/inappbrowser
+# @felipeteko/inappbrowser
   <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
   <div align="center">
 <h2><a href="https://capgo.app/">Check out: Capgo — Instant updates for capacitor</a></h2>
@@ -8,13 +8,13 @@ Capacitor plugin in app browser with urlChangeEvent
 ## Install
 
 ```bash
-npm install @capgo/inappbrowser
+npm install @felipeteko/inappbrowser
 npx cap sync
 ```
 ## Usage
 
 ```js
-import { InAppBrowser } from '@capgo/inappbrowser'
+import { InAppBrowser } from '@felipetkeo/inappbrowser'
 
 InAppBrowser.open({ url: "YOUR_URL" });
 ```
@@ -325,7 +325,7 @@ Reload the current web page.
 | **`visibleTitle`**                     | <code>boolean</code>                                            | visibleTitle: if true the website title would be shown else shown empty                                                                                                           | <code>true</code>                                          | 1.2.5  |
 | **`toolbarColor`**                     | <code>string</code>                                             | toolbarColor: color of the toolbar in hex format                                                                                                                                  | <code>'#ffffff''</code>                                    | 1.2.5  |
 | **`showArrow`**                        | <code>boolean</code>                                            | showArrow: if true an arrow would be shown instead of cross for closing the window                                                                                                | <code>false</code>                                         | 1.2.5  |
-| **`enableZoom`**                        | <code>boolean</code>                                            | enableZoom: if true enable zoom for the window, Android only                                                                                                | <code>false</code>                                         | 6.2.0  |
+| **`enableZoom`**                       | <code>boolean</code>                                            | enableZoom: if true enable zoom for the window, Android only                                                                                                                      | <code>false</code>                                         | 1.2.5  |
 | **`ignoreUntrustedSSLError`**          | <code>boolean</code>                                            | ignoreUntrustedSSLError: if true, the webview will ignore untrusted SSL errors allowing the user to view the website.                                                             | <code>false</code>                                         | 6.1.0  |
 
 
@@ -379,9 +379,7 @@ Construct a type with the properties of T except for those in type K.
 
 From T, pick a set of properties whose keys are in the union K
 
-<code>{
- [P in K]: T[P];
- }</code>
+<code>{ [P in K]: T[P]; }</code>
 
 
 #### Exclude
@@ -395,9 +393,7 @@ From T, pick a set of properties whose keys are in the union K
 
 Construct a type with a set of properties K of type T
 
-<code>{
- [P in K]: T;
- }</code>
+<code>{ [P in K]: T; }</code>
 
 
 #### GetCookieOptions

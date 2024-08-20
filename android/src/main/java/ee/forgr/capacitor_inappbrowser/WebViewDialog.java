@@ -90,8 +90,8 @@ public class WebViewDialog extends Dialog {
     _webView.getSettings().setDatabaseEnabled(true);
     _webView.getSettings().setDomStorageEnabled(true);
     _webView.getSettings().setAllowFileAccess(true);
-    _webView.getSettings().setBuiltInZoomControls(this._options.enableZoom);
-    _webView.getSettings().setSupportZoom(this._options.enableZoom);
+    _webView.getSettings().setBuiltInZoomControls(_options.enableZoom);
+    _webView.getSettings().setSupportZoom(_options.enableZoom);
     _webView
       .getSettings()
       .setPluginState(android.webkit.WebSettings.PluginState.ON);

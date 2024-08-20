@@ -1,6 +1,6 @@
 {
-  "name": "@capgo/inappbrowser",
-  "version": "6.2.0",
+  "name": "@felipeteko/inappbrowser",
+  "version": "6.2.2",
   "description": "Capacitor plugin in app browser",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -13,14 +13,14 @@
     "ios/Plugin/",
     "CapgoInappbrowser.podspec"
   ],
-  "author": "Martin Donadieu",
+  "author": "Martin Donadieu & Felipe Moreno",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cap-go/capacitor-inappbrowser.git"
+    "url": "git+https://github.com/felipeteko/capacitor-inappbrowser.git"
   },
   "bugs": {
-    "url": "https://github.com/Cap-go/capacitor-inappbrowser/issues"
+    "url": "https://github.com/felipeteko/capacitor-inappbrowser/issues"
   },
   "keywords": [
     "capacitor",
