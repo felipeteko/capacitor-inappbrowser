@@ -147,6 +147,7 @@ public class InAppBrowserPlugin: CAPPlugin {
             self.webViewController?.leftNavigationBarItemTypes = self.getToolbarItems(toolbarType: toolbarType)
             self.webViewController?.toolbarItemTypes = []
             self.webViewController?.doneBarButtonItemPosition = .right
+            self.webViewController?.doneBarButtonItem.title = "Listo"
             if call.getBool("showArrow", false) {
                 self.webViewController?.stopBarButtonItemImage = UIImage(named: "Forward@3x", in: Bundle(for: InAppBrowserPlugin.self), compatibleWith: nil)
             }
